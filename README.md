@@ -1,5 +1,5 @@
 # Kali-Linux-Recon
-It is a combination of NahamSec BBHT and https://github.com/vitalysim/totalrecon
+It is a combination of https://github.com/nahamsec/bbht and https://github.com/vitalysim/totalrecon
 Some are removed because they are already available in kali by default
 
 I recommend to run these commands before running install.sh because alot of repositories are go dependency.In case it is not installed the most tools will not install
