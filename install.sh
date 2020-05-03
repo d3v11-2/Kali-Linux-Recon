@@ -201,5 +201,5 @@ ls -la
 ls -la $GOPATH/bin
 
 echo "One last time: don't forget to set up AWS credentials in ~/.aws/!"
-echo " don't forget to register on https://www.maxmind.com/en/geolite2/signup to generate the license key for asnlookup
+echo " don't forget to register on https://www.maxmind.com/en/geolite2/signup to generate the license key for asnlookup"
 
