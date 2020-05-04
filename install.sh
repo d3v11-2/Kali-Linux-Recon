@@ -84,7 +84,7 @@ sudo cp $HOME/go/bin/ffuf /usr/local/bin
 echo "installing Sublist3r"
 git clone https://github.com/aboul3la/Sublist3r.git
 cd Sublist3r*
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 sudo python3 setup.py install
 cd ~/tools/
 echo "done"
