@@ -11,7 +11,7 @@ wget https://dl.google.com/go/go1.13.4.linux-amd64.tar.gz
 
 sudo tar -xvf go1.13.4.linux-amd64.tar.gz
 
-sudo mv $HOME/go /usr/local
+sudo mv go /usr/local
 
 export GOROOT=/usr/local/go
 
