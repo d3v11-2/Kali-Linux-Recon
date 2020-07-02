@@ -7,7 +7,8 @@ I recommend to run these commands before running install.sh because alot of repo
 
 apt install golang;
 
-wget  https://dl.google.com/go/go1.14.4.linux-amd64.tar.gz
+LATEST_GO=$(wget -qO- https://golang.org/dl/ | grep -oP 'go([0-9\.]+)\.linux-amd64\.tar\.gz' | head -n 1 | grep -oP 'go[0-9\.]+' | grep -oP '[0-9\.]+' | head -c -2)
+wget https://dl.google.com/go/go$LATEST_GO.linux-amd64.tar.gz
 
 
 sudo tar -xvf go*.tar.gz
