@@ -7,9 +7,10 @@ I recommend to run these commands before running install.sh because alot of repo
 
 apt install golang;
 
-wget https://dl.google.com/go/go1.13.4.linux-amd64.tar.gz
+wget  https://dl.google.com/go/go1.14.4.linux-amd64.tar.gz
 
-sudo tar -xvf go1.13.4.linux-amd64.tar.gz
+
+sudo tar -xvf go*.tar.gz
 
 sudo mv go /usr/local
 
