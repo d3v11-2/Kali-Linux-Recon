@@ -7,7 +7,7 @@ I recommend to run these commands before running install.sh because alot of repo
 
 apt install golang;
 
-GOLatest=$(wget -qO- https://golang.org/dl |grep -oP 'go([0-9.]+).linux-amd64.tar.gz'|head -n 1)
+GOLatest=$(wget -qO- https://golang.org/dl |grep -oP 'go([0-9.]+).linux-amd64.tar.gz'|head -n 1);
 wget https://golang.org/dl/$GOLatest
 
 
