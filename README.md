@@ -14,6 +14,7 @@ wget https://golang.org/dl/$GOLatest
 sudo tar -xvf go*.tar.gz
 
 sudo mv go /usr/local
+In case of Bash user
 
 export GOROOT=/usr/local/go
 
@@ -28,3 +29,12 @@ echo 'export GOPATH=$HOME/go'	>> ~/.bash_profile
 echo 'export PATH=$GOPATH/bin:$GOROOT/bin:$PATH' >> ~/.bash_profile	
 
 source ~/.bash_profile
+
+
+
+In case of Zsh user add these line at end of ~/.zshrc
+export GOPATH=$HOME/go
+export GOROOT=/usr/local/go
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOPATH
+export PATH=$PATH:$GOROOT/bin
