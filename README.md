@@ -11,7 +11,7 @@ GOLatest=$(wget -qO- https://golang.org/dl |grep -oP 'go([0-9.]+).linux-amd64.ta
 wget https://golang.org/dl/$GOLatest
 
 
-tar -xvf go1.11.2.linux-amd64.tar.gz
+tar -xvf go*.tar.gz
 sudo mv go /usr/local
 mkdir -p $HOME/goprojects
 echo "export GOROOT=/usr/local/go" >> ~/.bashrc
