@@ -29,14 +29,12 @@ select choice in "${choices[@]}"; do
 					GOLatest=$(wget -qO- https://golang.org/dl |grep -oP 'go([0-9.]+).linux-amd64.tar.gz'|head -n 1)
 					wget https://golang.org/dl/$GOLatest
 					sudo tar -xvf go*.tar.gz
-					sudo mv $HOME/go /usr/local
-					export GOROOT=/usr/local/go
-					export GOPATH=$HOME/go
-					export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
-					echo 'export GOROOT=/usr/local/go' >> ~/.bash_profile
-					echo 'export GOPATH=$HOME/go'	>> ~/.bash_profile			
-					echo 'export PATH=$GOPATH/bin:$GOROOT/bin:$PATH' >> ~/.bash_profile	
-					source ~/.bash_profile
+					sudo mv go /usr/local
+					mkdir -p $HOME/goprojects
+					echo "export GOROOT=/usr/local/go" >> ~/.bashrc
+					echo "export GOPATH=$HOME/goprojects" >> ~/.bashrc
+					echo "export PATH=$PATH:$GOROOT/bin:$GOPATH/bin" >> ~/.bashrc
+					source ~/.bashrc
 					sleep 1
 					break
 					;;
